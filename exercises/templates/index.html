@@ -10,6 +10,17 @@
 	<h1>Ping Pong is a graet game!</h1>
 
 	<p>ping pong is a nice 2 man competition, you dont have to swet, it is only skils</p>	
-
+	<p>my favorit games are:</p>
+	<h2>games: </h2>
+	
+		{ % if likes_same_sport=True %}
+			<li> you cant see my list </li>
+		{% else %}
+			{% for game in games %}
+			<ul>
+				<li> {{game}} </li>
+			</ul>
+			{% endfor %}
+		{% enfif%}
 </body>
 </html>
